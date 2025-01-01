@@ -4,7 +4,10 @@ import pickle
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from six.moves.urllib.parse import urlsplit
+import os
+import nltk
 
+nltk.data.path.append(os.path.join(os.getcwd(), 'nltk_data'))
 import joblib
 import pickle
 
