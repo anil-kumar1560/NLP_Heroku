@@ -5,6 +5,11 @@ from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.naive_bayes import MultinomialNB
 import joblib
 import pickle
+import os
+import nltk
+
+nltk.data.path.append(os.path.join(os.getcwd(), 'nltk_data'))
+
 
 # load the model from disk
 filename = 'nlp_model.pkl'
